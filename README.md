@@ -32,7 +32,6 @@
   <br>
   <strong>IDE recomendada: Eclipse e IntelliJ IDEA</strong>
   <br>
-  <strong>Gerenciamento de Dependências: Maven (opcional para projetos iniciais)</strong> 
   </h3>
 </p>
 <br>
