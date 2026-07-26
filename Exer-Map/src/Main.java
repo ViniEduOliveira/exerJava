@@ -11,7 +11,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Map<String, Integer> map = new TreeMap<>();
 
-        System.out.println("Enter file full path: " );
+        System.out.print("Enter file full path: " );
         String path = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
@@ -29,14 +29,13 @@ public class Main {
                 line = br.readLine();
             }
 
+            for (String name : map.keySet()) {
+                System.out.println(name + ": " + map.get(name));
+            }
+
         } catch (IOException e) {
             System.out.print("Error: " + e.getMessage());
         }
-
-        for (String name : map.keySet()) {
-            System.out.println(name + ": " + map.get(name));
-        }
-
         sc.close();
     }
 }
